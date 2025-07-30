@@ -1,0 +1,20 @@
+customers: id, name, address, address_2, city, territory_code, currency_code, post_code, county, abn, country_region_code, location_code, phone_no, salesperson_code, designation, created_at, updated_at
+failed_jobs: id, uuid, connection, queue, payload, exception, failed_at
+migrations: id, migration, batch
+model_has_permissions: permission_id, model_type, model_id
+model_has_roles: role_id, model_type, model_id
+password_reset_tokens: email, token, created_at
+pdf_previews: id, quote_id, designation_person, designation, pdf_title, body, inclusions, exclusions, closing_statement, date, total_cost, user_id, created_at, updated_at
+permissions: id, name, guard_name, created_at, updated_at
+personal_access_tokens: id, tokenable_type, tokenable_id, name, token, abilities, last_used_at, expires_at, created_at, updated_at
+profiles: id, user_id, phone, address, city, state, country, postal_code, date_of_birth, date_of_joining, avatar, designation, notes, created_at, updated_at
+quote_customer: id, quote_id, customer_id, created_at, updated_at
+quote_unit_costing: id, quote_id, unit_costing_values, created_at, updated_at
+quotes: id, quote_no, project_name, customers, due_date, award_date, win_probability, value, progress, salesperson_name, location, issued_by, date_received, job_number, status, description, files, created_at, updated_at
+role_has_permissions: permission_id, role_id
+roles: id, name, guard_name, created_at, updated_at
+sales_orders: id, quote_id, sales_order_no, customer_purchase_order_no, customer_id, order_date, due_date, sales_order_value, currency, status, progress, delivery_address, description, files, created_at, updated_at
+signatures: id, user_id, position, dir, phone, fax, salesperson_code, created_at, updated_at
+unit_costings: id, name, client_part_list_name, unit_cost, gst, unit_labour_time, created_at, updated_at
+users: id, name, email, email_verified_at, password, remember_token, created_at, updated_at
+work_orders: id, sales_order_id, work_order_no, work_order_title, start_date, due_date, status, progress, budget, project_manager_id, supervisor_id, technicians, resources, sub_contractors, files, description, created_at, updated_at, note
